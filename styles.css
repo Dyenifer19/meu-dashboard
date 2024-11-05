@@ -1,0 +1,401 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+.header h1 {* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  background-color: #000; /* Fundo preto */
+  color: #fff; /* Texto branco */
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #003366; /* Azul escuro */
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.notification-icon {
+  position: relative;
+  cursor: pointer;
+}
+
+.badge {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: red; /* Badge vermelho */
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+
+.sidebar {
+  position: fixed;
+  top: 60px; 
+  left: 0;
+  width: 200px;
+  height: calc(100% - 120px); 
+  background-color: #003366; /* Azul escuro */
+  color: white;
+  padding-top: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  padding: 5px 20px;
+}
+
+.sidebar ul li span {
+  margin-right: 10px;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover {
+  background-color: #00509e; /* Azul mais claro ao passar o mouse */
+}
+
+.main-content {
+  margin-top: 70px; 
+  margin-left: 220px; 
+  margin-bottom: 60px; 
+  padding: 20px;
+}
+
+.stats-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.card {
+  flex: 1 1 calc(25% - 15px);
+  background-color: #fff; /* Fundo branco para os cards */
+  color: #000; /* Texto preto nos cards */
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  min-width: 150px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra mais suave */
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.recent-activities {
+  margin-top: 20px;
+}
+
+.recent-activities ul {
+  list-style: none;
+}
+
+.recent-activities li {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.status-icon {
+  margin-right: 10px;
+}
+
+.status-icon.success {
+  color: green; /* Ícone de sucesso em verde */
+}
+
+.status-icon.error {
+  color: red; /* Ícone de erro em vermelho */
+}
+
+.status-icon.pending {
+  color: rgb(6, 43, 92); /* Ícone pendente em laranja */
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #003366; /* Azul escuro */
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer nav {
+  display: flex;
+  gap: 15px;
+}
+
+.footer nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer p {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .main-content {
+    margin-left: 0;
+  }
+
+  .stats-cards {
+    flex-direction: column;
+  }
+
+  .card {
+    flex: 1 1 100%;
+  }
+}
+
+  margin: 0;
+}
+
+.nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.notification-icon {
+  position: relative;
+  cursor: pointer;
+}
+
+.badge {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+
+.sidebar {
+  position: fixed;
+  top: 60px; 
+  left: 0;
+  width: 200px;
+  height: calc(100% - 120px); 
+  background-color: black;
+  color: white;
+  padding-top: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  padding: 5px 20px;
+}
+
+.sidebar ul li span {
+  margin-right: 10px;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+
+.main-content {
+  margin-top: 70px; 
+  margin-left: 220px; 
+  margin-bottom: 60px; 
+  padding: 20px;
+}
+
+
+.stats-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.card {
+  flex: 1 1 calc(25% - 15px);
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  min-width: 150px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+
+.recent-activities {
+  margin-top: 20px;
+}
+
+.recent-activities ul {
+  list-style: none;
+}
+
+.recent-activities li {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.status-icon {
+  margin-right: 10px;
+}
+
+.status-icon.success {
+  color: green;
+}
+
+.status-icon.error {
+  color: red;
+}
+
+.status-icon.pending {
+  color: orange;
+}
+
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer nav {
+  display: flex;
+  gap: 15px;
+}
+
+.footer nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer p {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .main-content {
+    margin-left: 0;
+  }
+
+  .stats-cards {
+    flex-direction: column;
+  }
+
+  .card {
+    flex: 1 1 100%;
+  }
+}
